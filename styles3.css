@@ -1,0 +1,91 @@
+body{
+    background-image: url("images/Notas, Pikachu.jpg");
+    background-size: cover; /* Ensures the background image covers the whole page */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0px 40px;
+    
+}
+.para{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+p{
+    color: rgb(124, 106, 5);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 1;
+    animation: glow 1.5s infinite alternate;
+}
+
+span{
+    color: antiquewhite;
+}
+.rayan{
+    font-size: 36px;
+}
+
+@media screen and (min-width: 520px) {
+    body {
+        background-image: url("images/r.jpg");
+    }
+    p{
+        font-size: 25px;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 215, 0), 0 0 15px rgb(255, 69, 0), 0 0 20px rgb(255, 215, 0), 0 0 25px rgb(255, 69, 0), 0 0 30px rgb(255, 215, 0), 0 0 35px rgb(255, 69, 0);
+    }
+    to {
+        text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 215, 0), 0 0 30px rgb(255, 69, 0), 0 0 40px rgb(255, 215, 0), 0 0 50px rgb(255, 69, 0), 0 0 60px rgb(255, 215, 0), 0 0 70px rgb(255, 69, 0);
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.para::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+    z-index: 0;
+    transform: rotate(30deg);
+    animation: glitter 2s linear infinite;
+}
+
+@keyframes glitter {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
