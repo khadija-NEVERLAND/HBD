@@ -1,5 +1,5 @@
 body{
-    background-image: url("images/Notas, Pikachu.jpg");
+    background-image: url("Notas, Pikachu.jpg");
     background-size: cover; /* Ensures the background image covers the whole page */
     display: flex;
     align-content: center;
