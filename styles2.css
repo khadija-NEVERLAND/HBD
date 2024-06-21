@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("images/Синий фон.jpg");
+    background-image: url("Синий фон.jpg");
     background-size: cover; /* Ensures the background image covers the whole page */
     display: flex;
     align-content: center;
