@@ -21,7 +21,7 @@ p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
     z-index: 1;
-    animation: glow 1.5s infinite alternate;
+   
 }
 
 span{
